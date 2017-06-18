@@ -203,13 +203,14 @@
     
     <script type="text/javascript">
     	function validateForm() {
+    		var e = document.forms["mc-embedded-subscribe-form"]["email"].value;
 		    var x = document.forms["mc-embedded-subscribe-form"]["messageA"].value;
 		    var y = document.forms["mc-embedded-subscribe-form"]["mentionA"].value;
 		    var z = document.forms["mc-embedded-subscribe-form"]["messageB"].value;
 		    var t = document.forms["mc-embedded-subscribe-form"]["mentionB"].value;
 		    var u = document.forms["mc-embedded-subscribe-form"]["messageC"].value;
 		    var v = document.forms["mc-embedded-subscribe-form"]["mentionC"].value;
-		    if (x == "" || y == "" || z == "" || t == "" || u == "" || v == "") {
+		    if (e == "" || x == "" || y == "" || z == "" || t == "" || u == "" || v == "") {
 		        alert("Debes rellenar todos los campos");
 		        return false;
 		    }
